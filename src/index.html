@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Story App - Share your moments and experiences with photos and locations">
+    <meta name="theme-color" content="#4285f4">
+    
     <link rel="shortcut icon" href="favicon.png">
-
-    <title>App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+    
+    <title>Story App</title>
   </head>
   <body>
-    <header>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link" id="skip-link">Skip to content</a>
+    
+    <header class="header">
       <div class="main-header container">
-        <a class="brand-name" href="#/">App</a>
+        <a class="brand-name" href="#/">
+          <i class="fas fa-book-open" aria-hidden="true"></i>
+          Story App
+        </a>
 
-        <nav id="navigation-drawer" class="navigation-drawer">
+        <nav id="navigation-drawer" class="navigation-drawer" aria-label="Main Navigation">
           <ul id="nav-list" class="nav-list">
-            <li><a href="#/">Beranda</a></li>
+            <li><a href="#/">Home</a></li>
             <li><a href="#/about">About</a></li>
           </ul>
         </nav>
 
-        <button id="drawer-button" class="drawer-button">☰</button>
+        <button 
+          id="drawer-button" 
+          class="drawer-button" 
+          aria-label="Toggle navigation menu" 
+          aria-controls="navigation-drawer" 
+          aria-expanded="false"
+        >
+          ☰
+        </button>
       </div>
     </header>
 
-    <main id="main-content" class="main-content"></main>
+    <main id="main-content" class="main-content" tabindex="-1"></main>
+    
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Story App. All rights reserved.</p>
+        <p>Made with ❤️ By Macaril</p>
+      </div>
+    </footer>
   </body>
 </html>
