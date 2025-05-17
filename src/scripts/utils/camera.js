@@ -167,3 +167,4 @@ export default class Camera {
     this.#takePictureButton.addEventListener('click', callback);
   }
 }
+//test
